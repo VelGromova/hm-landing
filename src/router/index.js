@@ -1,5 +1,7 @@
 import VueRouter from 'vue-router';
 import Vue from 'vue';
+import HomeComponent from '../components/pages/HomeComponent';
+import AboutMeComponent from '../components/pages/AboutMeComponent';
 
 Vue.use(VueRouter);
 
@@ -8,43 +10,13 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: 'HomeComponent',
+      component: HomeComponent
     },
     {
-      path: '/work',
-      name: 'Work',
-    },
-    {
-      path: '/service',
-      name: 'Service',
-    },
-    {
-      path: '/stories',
-      name: 'Stories',
-    },
-    {
-      path: '/about',
-      name: 'About',
-    },
-    {
-      path: '/careers',
-      name: 'Careers',
-    },
-    {
-      path: '/contact',
-      name: 'Contact',
-    },
-    {
-      path: '/terms-conditions/',
-      name: 'Terms and Condition',
-    },
-    {
-      path: '/partners/',
-      name: 'Partners',
-    },
-    {
-      path: '/vacations',
-      name: 'Vacations',
+      path: '/mona',
+      name: 'AboutMeComponent',
+      component: AboutMeComponent
     },
   ],
 });

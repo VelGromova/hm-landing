@@ -12,6 +12,7 @@ import FooterComponent from '../layout/FooterComponent'
 import Carousel from '../Carousel'
 
 export default {
+  name: 'HomeComponent',
   components: {
     HeaderComponent,
     FooterComponent,
