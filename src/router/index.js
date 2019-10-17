@@ -1,22 +1,28 @@
-import VueRouter from 'vue-router';
+import Router from 'vue-router';
 import Vue from 'vue';
-import HomeComponent from '../components/pages/HomeComponent';
-import AboutMeComponent from '../components/pages/AboutMeComponent';
+import Home from '../components/pages/Home';
+import AboutMe from '../components/pages/AboutMe';
+import Tantra from '../components/pages/Tantra';
 
-Vue.use(VueRouter);
+Vue.use(Router)
 
-export default new VueRouter({
+export default new Router({
   mode: 'history',
   routes: [
     {
       path: '/',
-      name: 'HomeComponent',
-      component: HomeComponent
+      name: 'Home',
+      component: Home
     },
     {
       path: '/mona',
-      name: 'AboutMeComponent',
-      component: AboutMeComponent
+      name: 'AboutMe',
+      component: AboutMe
+    },
+    {
+      path: '/tantra',
+      name: 'Tantra',
+      component: Tantra
     },
   ],
 });

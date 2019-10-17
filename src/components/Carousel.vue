@@ -89,6 +89,7 @@ export default {
         }
         &__title {
             letter-spacing: 2px;
+
         }
     }
     .slide:first-of-type {

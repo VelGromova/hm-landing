@@ -1,12 +1,19 @@
 <template>
-    <div>
-        <h1>About</h1>
-        <p>Here is some information. This is the about page</p>
-    </div>
+    <section class="container section-padding">
+        <h3>About Me</h3>
+        <p>{{ text }}</p>
+    </section>
 </template>
 
 <script>
+  import aboutMe from '../../assets/data/aboutMe.json';
   export default {
-    name: 'AboutMeComponent'
+    name: 'AboutMe',
+
+    data() {
+      return {
+        text: aboutMe.text,
+      }
+    }
   }
 </script>

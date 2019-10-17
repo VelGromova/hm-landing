@@ -2,9 +2,9 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <a href="#" class="logo">
+                <router-link class="logo" :to="'/'">
                     <img src="https://images.squarespace-cdn.com/content/5308f1c9e4b0c1a4a9397005/1471482143067-73P19MRZ07V2CSKRQ64Z/Name+Handwritten+Logo+name+early+bird.png?content-type=image%2Fpng" alt="">
-                </a>
+                </router-link>
                 <navigation></navigation>
             </div>
         </div>

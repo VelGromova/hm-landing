@@ -1,19 +1,23 @@
 <template>
-  <div id="app">
-    <transition name="load" mode="out-in" appear>
-      <home-component/>
-    </transition>
-  </div>
+  <transition name="load" mode="out-in" appear>
+    <div id="app">
+        <header-component />
+          <router-view />
+        <footer-component />
+    </div>
+  </transition>
 </template>
 
 <script>
   import '@/assets/css/app.css';
-  import HomeComponent from './components/pages/HomeComponent';
+  import HeaderComponent from './components/layout/HeaderComponent';
+  import FooterComponent from './components/layout/FooterComponent';
 
   export default {
     name: 'App',
     components: {
-      HomeComponent,
+      HeaderComponent,
+      FooterComponent,
     },
   };
 </script>
